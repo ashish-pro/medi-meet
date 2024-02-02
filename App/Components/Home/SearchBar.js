@@ -14,7 +14,7 @@ const SearchBar = ({setSearchText}) => {
             }}>
                 <Ionicons name="search" size={24} color={Colors.PRIMARY} />
                 <TextInput placeholder='Search' onChangeText={(value)=>setSearchInput(value)} 
-                style={{width:'100%'}}
+                style={{width:'100%', fontFamily:'appfont'}}
                 onSubmitEditing={() => setSearchText(searchInput)}/>
             </View>
         </View>
