@@ -4,6 +4,7 @@ import { useAuth } from '@clerk/clerk-expo';
 import Header from '../Components/Home/Header';
 import SearchBar from '../Components/Home/SearchBar';
 import Slider from '../Components/Home/Slider';
+import Categories from '../Components/Home/Categories';
 
 const Home = () => {
     const { isLoaded,signOut } = useAuth();
@@ -13,7 +14,8 @@ const Home = () => {
         
       <SearchBar setSearchText={(value)=> console.log(value)}/>
 
-      <Slider />    
+      <Slider />  
+      <Categories />  
       {/* <Button title='SignOut' onPress={()=>signOut()}></Button> */}
     </View>
   )
